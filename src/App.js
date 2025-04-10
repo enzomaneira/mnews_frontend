@@ -45,7 +45,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/users", {
+      const response = await fetch("http://3.88.101.123:8080/api/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
