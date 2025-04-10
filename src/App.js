@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchInterests = async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/interests");
+        const res = await fetch("http://3.88.101.123:8080/api/interests");
         const data = await res.json();
         setInterests(data);
       } catch (err) {
