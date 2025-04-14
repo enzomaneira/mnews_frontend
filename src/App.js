@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchInterests = async () => {
       try {
-        const res = await fetch("http://3.90.201.215:8080/api/interests");
+        const res = await fetch("http://54.90.103.191:8080/api/interests"); // Novo IP
         const data = await res.json();
         setInterests(data);
       } catch (err) {
@@ -45,7 +45,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://3.90.201.215:8080/api/users", {
+      const response = await fetch("http://54.90.103.191:8080/api/users", { // Novo IP
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
